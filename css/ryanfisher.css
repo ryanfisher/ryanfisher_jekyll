@@ -31,3 +31,20 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: #DDD;
 }
+
+#terminal {
+  width: 400px;
+  margin: 10px auto;
+  padding-left: 10px;
+}
+
+#prompt {
+  display: block;
+  background-color: white;
+  width: 10px;
+  height: 20px;
+}
+
+#prompt.cursor {
+  background-color: black;
+}
