@@ -36,13 +36,20 @@ a:hover, a:active {
   width: 400px;
   margin: 10px auto;
   padding-left: 10px;
+  text-align: left;
+}
+
+#terminal-input {
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 #prompt {
-  display: block;
+  display: inline-block;
   background-color: white;
   width: 10px;
   height: 20px;
+  vertical-align: top;
 }
 
 #prompt.cursor {
