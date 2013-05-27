@@ -33,6 +33,7 @@ a:hover, a:active {
 }
 
 #terminal {
+  display: none;
   width: 400px;
   margin: 10px auto;
   padding-left: 10px;
