@@ -41,7 +41,6 @@ a:hover, a:active {
 
 #terminal-input {
   word-wrap: break-word;
-  word-break: break-word;
 }
 
 #prompt {

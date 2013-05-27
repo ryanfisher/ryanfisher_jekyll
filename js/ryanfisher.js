@@ -10,6 +10,7 @@ function add_cursor() {
 
 function prepend_text(event) {
   var character = String.fromCharCode(event.keyCode);
+  if (character === ' ') { character = '&nbsp;' };
   $('#terminal-input').append(character);
 }
 
