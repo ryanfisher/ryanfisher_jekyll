@@ -1,0 +1,15 @@
+#windansea-images {
+  margin: 0 auto;
+  width: 1024px;
+  height: 768px;
+  background-image: url('/images/windansea/2012-09-23.jpg');
+  -webkit-transition: background-image 3.4s ease-in-out;
+  -moz-transition: background-image 3.4s ease-in-out;
+  -ms-transition: background-image 3.4s ease-in-out;
+  -o-transition: background-image 3.4s ease-in-out;
+  transition: background-image 3.4s ease-in-out;
+}
+
+img {
+  display: none;
+}
