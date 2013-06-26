@@ -13,8 +13,24 @@ image_dates = [
   '2013-05-11',
 ];
 
-function rotate_images() {
-  $('#windansea-images').css('background-image', 'url(/images/windansea/2013-05-11.jpg)');
+function display_next_image(index) {
+  current = $('.windansea-images:visible')
+  current.css('z-index', 1);
+  next = $('.windansea-images:hidden')
+  next.css('z-index', 0).css(
+    'background-image',
+    'url(/images/windansea/'+image_dates[index]+'.jpg)'
+  );
+  if (index+1 >= image_dates.length) { index = 0 }
+  else { index++ }
+  next.show();
+  current.fadeOut(1000, function () {
+  setTimeout(function() {
+      display_next_image(index);
+    },
+    2000
+  );
+  });
 }
 
 function preload_images() {
@@ -26,7 +42,7 @@ function preload_images() {
 
 function initialize_app() {
   preload_images();
-  rotate_images();
+  display_next_image(0);
 }
 
 $(document).ready(initialize_app);
