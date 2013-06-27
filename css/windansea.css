@@ -5,27 +5,12 @@
   margin: 0 auto;
 }
 
-#windansea-image-front {
+.windansea-images {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-  width: 1024px;
-  height: 768px;
-  background-image: url('/images/windansea/2012-09-23.jpg');
-}
-
-#windansea-image-back {
-  display: none;
-  position: relative;
   z-index: 0;
   top: 0px;
   left: 0px;
   width: 1024px;
   height: 768px;
   background-image: url('/images/windansea/2012-12-02.jpg');
-}
-
-img {
-  display: none;
 }

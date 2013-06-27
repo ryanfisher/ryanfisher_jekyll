@@ -13,36 +13,37 @@ image_dates = [
   '2013-05-11',
 ];
 
-function display_next_image(index) {
-  current = $('.windansea-images:visible')
-  current.css('z-index', 1);
-  next = $('.windansea-images:hidden')
-  next.css('z-index', 0).css(
-    'background-image',
-    'url(/images/windansea/'+image_dates[index]+'.jpg)'
-  );
+function fade_image(index) {
+  current = $('.windansea-images[data-image="'+index+'"]');
+  z = current.css('z-index');
   if (index+1 >= image_dates.length) { index = 0 }
   else { index++ }
-  next.show();
-  current.fadeOut(1000, function () {
-  setTimeout(function() {
-      display_next_image(index);
-    },
-    2000
-  );
+  current.fadeOut(2000, function () {
+    current.css('z-index', z-image_dates.length);
+    current.show();
+    setTimeout(function() {
+        fade_image(index);
+      },
+      2000
+    );
   });
 }
 
 function preload_images() {
  for (var i=0; i < image_dates.length; i++) {
-  image = $('<img />', {src:"/images/windansea/"+image_dates[i]+".jpg"});
-  $('body').append(image);
+  image = $('<img />', {
+    src:"/images/windansea/"+image_dates[i]+".jpg",
+    class: 'windansea-images',
+    'data-image': i
+  });
+  image.css('z-index', -i);
+  $('#windansea-image-container').append(image);
  }
 }
 
 function initialize_app() {
   preload_images();
-  display_next_image(0);
+  setTimeout(function() {fade_image(0);}, 1000);
 }
 
 $(document).ready(initialize_app);
