@@ -1,15 +1,28 @@
 #windansea-image-container {
   position: relative;
-  width: 1024px;
+  width: 1224px;
   height: 768px;
   margin: 0 auto;
+}
+
+#image-list {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.showing {
+  font-weight: bold;
 }
 
 .windansea-images {
   position: absolute;
   z-index: 0;
   top: 0px;
-  left: 0px;
+  left: 200px;
   width: 1024px;
   height: 768px;
   background-image: url('/images/windansea/2012-12-02.jpg');
