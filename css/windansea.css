@@ -33,8 +33,10 @@ li {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 100;
   border-radius: 5px 0 0 5px;
+  cursor: pointer;
 }
 
 .showing {
   background-color: #eee;
+  cursor: default;
 }
