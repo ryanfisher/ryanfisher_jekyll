@@ -34,6 +34,7 @@ GEM
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
     safe_yaml (0.7.1)
+    sass (3.2.12)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -49,3 +50,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 1.0.0)
   jekyll-assets (~> 0.7.4)
+  sass (~> 3.2.12)
