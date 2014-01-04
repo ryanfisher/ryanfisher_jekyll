@@ -1,1 +1,9 @@
+author:  Ryan Fisher
+tagline: Programmer, nerd, smug introvert
+meta_description: Ryan Fisher is a software engineer based in San Diego, Ca. He spends most of his time sitting quietly, writing code, and soaking in compliments about his beard.
+
+analytics:
+  google:
+    id:    UA-20742253-1
+
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
