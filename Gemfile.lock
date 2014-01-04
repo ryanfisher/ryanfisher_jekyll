@@ -33,6 +33,7 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
+    rake (10.1.0)
     safe_yaml (0.7.1)
     sass (3.2.12)
     sprockets (2.10.1)
@@ -50,4 +51,5 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 1.0.0)
   jekyll-assets (~> 0.7.4)
+  rake (~> 10.1.0)
   sass (~> 3.2.12)
