@@ -33,3 +33,60 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: #DDD;
 }
+
+#projects {
+  width: 800px;
+  margin: 0 auto;
+  font-weight: 100;
+  color: #444;
+
+  h2 {
+    font-weight: 100;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+  }
+}
+
+.project {
+  padding-bottom: 20px;
+
+  .header {
+    text-align: left;
+    background-color: #333;
+    color: white;
+
+    img {
+      width: 380px;
+      vertical-align: top;
+    }
+
+    .info {
+      display: inline-block;
+      text-align: left;
+      margin: 10px;
+      width: 380px;
+
+      a:link, a:visited {
+        color: #82BFE9;
+        border-bottom: 1px solid transparent;
+      }
+
+      a:hover, a:active {
+        background-color: inherit;
+        border-bottom: 1px solid #82BFE9;
+      }
+
+      h3 {
+        font-weight: 100;
+        margin: 0;
+      }
+
+      .technology {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .description { text-align: left; }
+}
