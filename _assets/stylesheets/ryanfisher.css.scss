@@ -66,6 +66,12 @@ a:hover, a:active {
       margin: 10px;
       width: 380px;
 
+      .dates {
+        float: right;
+        margin: 0;
+        font-size: 12px;
+      }
+
       a:link, a:visited {
         color: #82BFE9;
         border-bottom: 1px solid transparent;
