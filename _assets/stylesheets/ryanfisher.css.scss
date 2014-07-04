@@ -39,6 +39,7 @@ a:hover, a:active {
   margin: 0 auto;
   font-weight: 100;
   color: #444;
+  max-width: 100%;
 
   h2 {
     font-weight: 100;
@@ -90,9 +91,27 @@ a:hover, a:active {
       .technology {
         font-size: 16px;
         margin-top: 10px;
+        padding-bottom: 10px;
       }
     }
   }
 
   .description { text-align: left; }
+}
+
+@media all and (max-width: 820px) and (min-width: 601px) {
+  .project .header {
+    img { max-width: 45%; }
+    .info { max-width: 45%; }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .project .header {
+    img { width: 100%; }
+    .info {
+      display: block;
+      width: inherit;
+    }
+  }
 }
