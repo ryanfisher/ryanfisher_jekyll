@@ -20,9 +20,9 @@ end
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
   if `git status -s`.empty?
-    system "git checkout -b gh-pages" unless system "git checkout gh-pages"
     Dir.mktmpdir do |tmp|
       system "mv _site/* #{tmp}"
+      system "git checkout -b gh-pages" unless system "git checkout gh-pages"
       system "rm -rf *"
       system "mv #{tmp}/* ."
     end
