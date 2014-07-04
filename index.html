@@ -32,25 +32,44 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: #DDD; }
 
-#terminal {
-  display: none;
-  width: 400px;
-  margin: 10px auto;
-  padding-left: 10px;
-  text-align: left; }
+#projects {
+  width: 800px;
+  margin: 0 auto;
+  font-weight: 100;
+  color: #444; }
+  #projects h2 {
+    font-weight: 100;
+    text-transform: lowercase;
+    margin-bottom: 10px; }
 
-#terminal-input {
-  word-wrap: break-word; }
-
-#prompt {
-  display: inline-block;
-  background-color: white;
-  width: 10px;
-  height: 20px;
-  vertical-align: top; }
-
-#prompt.cursor {
-  background-color: black; }
+.project {
+  padding-bottom: 20px; }
+  .project .header {
+    text-align: left;
+    background-color: #333;
+    color: white; }
+    .project .header img {
+      width: 380px;
+      vertical-align: top; }
+    .project .header .info {
+      display: inline-block;
+      text-align: left;
+      margin: 10px;
+      width: 380px; }
+      .project .header .info a:link, .project .header .info a:visited {
+        color: #82BFE9;
+        border-bottom: 1px solid transparent; }
+      .project .header .info a:hover, .project .header .info a:active {
+        background-color: inherit;
+        border-bottom: 1px solid #82BFE9; }
+      .project .header .info h3 {
+        font-weight: 100;
+        margin: 0; }
+      .project .header .info .technology {
+        font-size: 16px;
+        margin-top: 10px; }
+  .project .description {
+    text-align: left; }
 </style>
     <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -75,8 +94,9 @@ _gaq.push(['_trackPageview']);
     <li>photography: <a href="http://500px.com/ryanf" target="_blank">500px profile</a></li>
 </ul>
 
-<div id="terminal">
-    <span id="terminal-input">></span><span id="prompt"></span>
+<div id="projects">
+  <h2>Projects</h2>
+  
 </div>
 
 
