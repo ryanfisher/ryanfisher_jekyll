@@ -36,7 +36,8 @@ a:hover, a:active {
   width: 800px;
   margin: 0 auto;
   font-weight: 100;
-  color: #444; }
+  color: #444;
+  max-width: 100%; }
   #projects h2 {
     font-weight: 100;
     text-transform: lowercase;
@@ -56,6 +57,10 @@ a:hover, a:active {
       text-align: left;
       margin: 10px;
       width: 380px; }
+      .project .header .info .dates {
+        float: right;
+        margin: 0;
+        font-size: 12px; }
       .project .header .info a:link, .project .header .info a:visited {
         color: #82BFE9;
         border-bottom: 1px solid transparent; }
@@ -67,9 +72,22 @@ a:hover, a:active {
         margin: 0; }
       .project .header .info .technology {
         font-size: 16px;
-        margin-top: 10px; }
+        margin-top: 10px;
+        padding-bottom: 10px; }
   .project .description {
     text-align: left; }
+
+@media all and (max-width: 820px) and (min-width: 601px) {
+  .project .header img {
+    max-width: 45%; }
+  .project .header .info {
+    max-width: 45%; } }
+@media all and (max-width: 600px) {
+  .project .header img {
+    width: 100%; }
+  .project .header .info {
+    display: block;
+    width: inherit; } }
 </style>
     <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -101,6 +119,7 @@ _gaq.push(['_trackPageview']);
       <div class="header">
         <img class="screenshot" src="/images/nulu-screenshot.jpg">
         <div class="info">
+          <p class="dates">Late 2011 to present</p>
           <h3>Nulu</h3>
           <a href="http://www.nulu.com">http://www.nulu.com</a>
           <div class="technology">Ruby, Rails, RSpec, JavacSript, CoffeeScript, Backbone.js, Underscore.js, Jasmine, Git, Github, CircleCI, Mixpanel, Google Analytics, AWS (EC2 and S3), MySQL, Cassandra, CSS3, SASS, HTML 5, Slim, Stripe, Playspan
@@ -121,6 +140,7 @@ _gaq.push(['_trackPageview']);
       <div class="header">
         <img class="screenshot" src="/images/photoapp-screenshot.jpg">
         <div class="info">
+          <p class="dates">Mid 2014 to present</p>
           <h3>Photo App</h3>
           <a href=""></a>
           <div class="technology">Python, Django, unittest, Javascript, CoffeeScript, Backbone.js, Git, Github, PostgreSQL, Google Analytics, AWS (EC2 and S3), CSS 3, LESS, HTML 5
@@ -141,6 +161,7 @@ _gaq.push(['_trackPageview']);
       <div class="header">
         <img class="screenshot" src="/images/ninetwenty14-screenshot.png">
         <div class="info">
+          <p class="dates">Early 2014 to present</p>
           <h3>NineTwenty14</h3>
           <a href="http://ninetwenty14.com">http://ninetwenty14.com</a>
           <div class="technology">Jekyll, Ruby, Markdown, Sass, Git, Gitbub pages, JavaScript, jQuery, Google Analytics
