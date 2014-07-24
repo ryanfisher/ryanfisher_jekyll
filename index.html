@@ -19,7 +19,12 @@ title: Ryan Fisher - Programmer, nerd, smug introvert
         <div class="info">
           <p class="dates">{{project.dates_active}}</p>
           <h3>{{ project.name }}</h3>
-          <a href="{{project.url}}">{{project.url}}</a>
+          <div>
+            <a href="{{project.url}}">{{project.url}}</a>
+            {% if project.temp_url %}
+              <a href="{{project.temp_url}}">{{project.temp_url}}</a> (temporary url)
+            {% endif %}
+          </div>
           <div class="technology">{{project.technology_tools}}</div>
         </div>
       </div>

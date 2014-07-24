@@ -23,6 +23,7 @@
     Playspan
 
 - name: Photo App
+  temp_url: "http://photos.ryanfisher.io"
   screenshot: photoapp-screenshot.jpg
   status: deploying soon
   dates_active: Mid 2014 to present
@@ -30,14 +31,15 @@
     This yet to be named hobby photo application was developed as a way to
     share and back up my photos. Developed with multiple users in mind, I'll be
     opening it up to friends and family first, and outside users later, if
-    financially viable. The target user is hobbyist to professional
+    financially viable. The target users are hobbyist to professional
     photographers using dslr or other similar level cameras.
   role: >
     As the sole person working on this project, I am responsible for
     everything from design to development to server administration.
   technology_tools: >
-    Python, Django, unittest, Javascript, CoffeeScript, Backbone.js, Git, Github,
-    PostgreSQL, Google Analytics, AWS (EC2 and S3), CSS 3, LESS, HTML 5
+    Python, Django, unittest, Javascript, CoffeeScript, Backbone.js, Git,
+    Github, PostgreSQL, Google Analytics, AWS (EC2 and S3), CSS 3, LESS,
+    HTML 5, uWSGI, Nginx
 
 - name: NineTwenty14
   url:  "http://ninetwenty14.com"
