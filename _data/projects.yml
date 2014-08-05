@@ -23,7 +23,7 @@
     Playspan
 
 - name: Photo App
-  temp_url: "http://photos.ryanfisher.io"
+  temp_url: "http://photos.ryanfisher.io/photos"
   screenshot: photoapp-screenshot.jpg
   status: deploying soon
   dates_active: Mid 2014 to present
