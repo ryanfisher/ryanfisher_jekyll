@@ -18,11 +18,20 @@ h1 {
 }
 
 ul {
-  width: 430px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 10px;
   list-style: none;
-  text-align: left;
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  li + li:before {
+    content: '|';
+    margin-right: 12px;
+  }
 }
 
 a:link, a:visited {
