@@ -19,11 +19,16 @@ h1 {
   color: #03406a; }
 
 ul {
-  width: 430px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 10px;
   list-style: none;
-  text-align: left; }
+  text-align: center; }
+  ul li {
+    display: inline-block; }
+  ul li + li:before {
+    content: '|';
+    margin-right: 12px; }
 
 a:link, a:visited {
   text-decoration: none;
@@ -112,10 +117,10 @@ a:hover, a:active {
 
 <h1>Ryan Fisher</h1>
 <ul id="find-me">
-    <li>contact: &nbsp;&nbsp;&nbsp;&nbsp;ryan@ryanfisher.io</li>
-    <li>code: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ryanfisher" target="_blank">github</a></li>
-    <li>twitter: &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/ryan_fisher" target="_blank">@ryan_fisher</a></li>
-    <li>photography: <a href="http://500px.com/ryanf" target="_blank">500px profile</a></li>
+    <li>ryan@ryanfisher.io</li>
+    <li><a href="https://github.com/ryanfisher" target="_blank">github</a></li>
+    <li><a href="https://twitter.com/ryan_fisher" target="_blank">@ryan_fisher</a></li>
+    <li><a href="http://500px.com/ryanf" target="_blank">500px</a></li>
 </ul>
 
 <div id="projects">
