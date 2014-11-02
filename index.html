@@ -11,29 +11,5 @@ title: Ryan Fisher - Programmer, nerd, smug introvert
 </ul>
 
 <div id="projects">
-  <h2>Projects</h2>
-  {% for project in site.data.projects %}
-    <div class="project">
-      <div class="header">
-        <img class="screenshot" src="/images/{{ project.screenshot }}">
-        <div class="info">
-          <p class="dates">{{project.dates_active}}</p>
-          <h3>{{ project.name }}</h3>
-          <div>
-            <a href="{{project.url}}">{{project.url}}</a>
-            {% if project.temp_url %}
-              <a href="{{project.temp_url}}">{{project.temp_url}}</a> (temporary url)
-            {% endif %}
-          </div>
-          <div class="technology">{{project.technology_tools}}</div>
-        </div>
-      </div>
-      <dl class="description">
-        <dt>about:</dt>
-        <dd>{{project.about}}</dd>
-        <dt>role:</dt>
-        <dd>{{project.role}}</dd>
-      </dl>
-    </div>
-  {% endfor %}
+  {% include projects.html %}
 </div>
