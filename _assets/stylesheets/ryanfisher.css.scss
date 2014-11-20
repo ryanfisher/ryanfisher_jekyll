@@ -3,7 +3,7 @@
 //= require normalize
 
 body {
-  font-family: 'Cutive Mono', serif;
+  font-family: "Open Sans";
   font-size: 20px;
   text-align: center;
 }
@@ -12,9 +12,11 @@ h1 {
   width: 430px;
   margin: 10px auto;
   font-size: 60px;
-  font-family: "Open Sans";
-  font-weight: 300;
   color: #03406a;
+}
+
+h2, h5 {
+  font-weight: 100;
 }
 
 ul {
@@ -100,7 +102,6 @@ a:hover, a:active {
       }
 
       h3 {
-        font-family: "Open Sans";
         font-weight: 300;
         margin: 0;
       }
@@ -115,7 +116,6 @@ a:hover, a:active {
 
   .description {
     text-align: left;
-    font-family: "Open Sans";
   }
 }
 
