@@ -2,48 +2,61 @@
 
 //= require normalize
 
+$main-blue: #03406a;
+
 body {
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 1.5;
   text-align: center;
 }
 
-h1 {
-  width: 430px;
-  margin: 10px auto;
-  font-size: 60px;
-  color: #03406a;
+a:link, a:visited {
+  text-decoration: none;
 }
 
-h2, h5 {
-  font-weight: 100;
-}
-
-ul {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
+nav {
+  ul {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
 
   li {
     display: inline-block;
   }
 
   li + li:before {
-    content: '|';
+    content: '';
     margin-right: 12px;
+  }
+
+  a {
+    display: inline-block;
+
+    &:link, &:visited {
+      border-bottom: 3px solid transparent;
+      text-decoration: none;
+      color: $main-blue;
+      font-weight: 500;
+    }
+    &:hover, &:active {
+      border-bottom: 3px solid orange;
+    }
   }
 }
 
-a:link, a:visited {
-  text-decoration: none;
-  color: #03406a;
-  font-weight: 500;
+h1 {
+  width: 430px;
+  margin: 10px auto;
+  font-size: 60px;
+  color: $main-blue;
 }
 
-a:hover, a:active {
-  background-color: #DDD;
+h2, h5 {
+  font-weight: 100;
 }
 
 #projects {
