@@ -35,6 +35,11 @@ nav {
     line-height: 1;
     border-radius: 0 0 20px 20px;
     height: 90px;
+    -webkit-transition: top 1s;
+    transition: top 1s;
+    &.up {
+      top: -100px;
+    }
 
     h2, h5 {
       font-weight: 100;
