@@ -9,6 +9,7 @@ body {
   font-size: 22px;
   line-height: 1.5;
   text-align: center;
+  margin: 0;
 }
 
 a:link, a:visited {
@@ -16,12 +17,42 @@ a:link, a:visited {
 }
 
 nav {
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  margin-top: -10px;
+
+  .nav-header {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0 10px;
+    position: relative;
+    top: 24px;
+    background-color: white;
+    line-height: 1;
+
+    h2, h5 {
+      font-weight: 100;
+      display: block;
+      margin: 0;
+    }
+
+    h2 {
+      color: $main-blue;
+      font-size: 40px;
+    }
+
+    h5 {
+      font-size: 8px;
+      display: none;
+    }
+  }
+
   ul {
-    width: 100%;
-    margin: 0 auto;
+    margin: 0 0 0 30px;
     padding-left: 0;
     list-style: none;
     text-align: center;
+    display: inline-block;
   }
 
   li {
@@ -33,8 +64,10 @@ nav {
     margin-right: 12px;
   }
 
-  a {
+  ul a {
     display: inline-block;
+    font-size: 18px;
+    height: 100%;
 
     &:link, &:visited {
       border-bottom: 3px solid transparent;
@@ -53,10 +86,6 @@ h1 {
   margin: 10px auto;
   font-size: 60px;
   color: $main-blue;
-}
-
-h2, h5 {
-  font-weight: 100;
 }
 
 #projects {
