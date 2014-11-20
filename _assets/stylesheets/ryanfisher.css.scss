@@ -19,16 +19,22 @@ a:link, a:visited {
 nav {
   border-bottom: 1px solid #ccc;
   text-align: left;
-  margin-top: -10px;
+  margin-top: -58px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 
   .nav-header {
     display: inline-block;
     margin-left: 20px;
-    padding: 0 10px;
+    padding: 0 13px;
     position: relative;
-    top: 24px;
-    background-color: white;
+    top: 35px;
+    background-color: $main-blue;
     line-height: 1;
+    border-radius: 0 0 20px 20px;
+    height: 90px;
 
     h2, h5 {
       font-weight: 100;
@@ -37,8 +43,9 @@ nav {
     }
 
     h2 {
-      color: $main-blue;
-      font-size: 40px;
+      color: white;
+      font-size: 30px;
+      margin-top: 38px;
     }
 
     h5 {
@@ -53,6 +60,7 @@ nav {
     list-style: none;
     text-align: center;
     display: inline-block;
+    vertical-align: bottom;
   }
 
   li {
@@ -105,6 +113,10 @@ h1 {
   a {
     font-size: 18px;
   }
+}
+
+#main-content {
+  margin-top: 40px;
 }
 
 .project {
