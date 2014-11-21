@@ -7,3 +7,7 @@ analytics:
     id:    UA-20742253-1
 
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
