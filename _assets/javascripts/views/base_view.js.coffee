@@ -12,4 +12,6 @@ class BaseView
     for key, value of @events
       @$el.on key, => this['__proto__'][value].call(this)
 
+  $: (el) -> @$el.find(el)
+
 window.BaseView = BaseView
