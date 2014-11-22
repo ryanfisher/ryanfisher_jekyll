@@ -19,7 +19,9 @@ class GithubEvents
 
   lastCommitMessage: ->
     for ev in @attributes
-      return ev.payload.commits['0'].message if ev.type == 'PushEvent'
+      if ev.type == 'PushEvent'
+        commits = ev.payload.commits
+        return commits[commits.length - 1].message
     null
 
 window.GithubEvents = GithubEvents
