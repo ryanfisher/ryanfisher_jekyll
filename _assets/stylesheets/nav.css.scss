@@ -1,29 +1,11 @@
 $main-blue: #03406a;
 
 nav {
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-  margin-top: -58px;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  margin: 40px auto 0;
   background-color: white;
 
   .nav-header {
     display: inline-block;
-    margin-left: 20px;
-    padding: 0 13px;
-    position: relative;
-    top: 35px;
-    background-color: $main-blue;
-    line-height: 1;
-    border-radius: 0 0 20px 20px;
-    height: 90px;
-    -webkit-transition: top 1s;
-    transition: top 1s;
-    &.up {
-      top: -100px;
-    }
 
     h2, h5 {
       font-weight: 100;
@@ -32,9 +14,8 @@ nav {
     }
 
     h2 {
-      color: white;
+      color: $main-blue;
       font-size: 30px;
-      margin-top: 38px;
     }
 
     h5 {
@@ -49,7 +30,6 @@ nav {
     list-style: none;
     text-align: center;
     display: inline-block;
-    vertical-align: bottom;
   }
 
   li {
@@ -65,6 +45,8 @@ nav {
     display: inline-block;
     font-size: 18px;
     height: 100%;
+    padding-bottom: 3px;
+    transition: all 0.3s;
 
     &:link, &:visited {
       border-bottom: 3px solid transparent;
@@ -73,6 +55,7 @@ nav {
       font-weight: 500;
     }
     &:hover, &:active {
+      padding-bottom: 0;
       border-bottom: 3px solid orange;
     }
   }

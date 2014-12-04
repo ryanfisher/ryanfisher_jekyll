@@ -1,12 +1,12 @@
 class WindowView extends BaseView
   el: window
   events:
-    'scroll' : 'change_header'
+    'scroll' : 'change_nav'
 
   initialize: ->
-    @header = new NavHeader
+    @nav = new Nav
 
-  change_header: ->
-    if @$el.scrollTop() == 0 then @header.show() else @header.hide()
+  change_nav: ->
+    if @$el.scrollTop() == 0 then @nav.show() else @nav.hide()
 
 window.WindowView = WindowView
