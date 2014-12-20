@@ -14,9 +14,9 @@ defaults:
     scope:
       path: ""
       type: "drafts"
-      author: "Ryan Fisher"
     values:
       layout: "post"
+      author: "Ryan Fisher"
   -
     scope:
       path: ""

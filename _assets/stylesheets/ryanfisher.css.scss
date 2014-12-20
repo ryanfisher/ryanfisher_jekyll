@@ -12,10 +12,17 @@ a:link, a:visited {
 }
 
 h1 {
-  width: 430px;
   margin: 10px auto;
   font-size: 60px;
   color: $main-blue;
+}
+
+#main-content {
+  p {
+    margin: 20px auto;
+    max-width: 780px;
+    text-align: left;
+  }
 }
 
 #projects {
@@ -35,10 +42,6 @@ h1 {
   a {
     font-size: 18px;
   }
-}
-
-#main-content {
-  margin-top: 40px;
 }
 
 .project {
