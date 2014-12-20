@@ -1,5 +1,4 @@
 ---
-layout: essay
 title: Getting postgres set up for django
 ---
 
