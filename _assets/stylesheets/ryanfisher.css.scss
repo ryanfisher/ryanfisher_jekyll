@@ -14,14 +14,19 @@ a:link, a:visited {
 h1 {
   margin: 10px auto;
   font-size: 60px;
+  font-weight: 100;
   color: $main-blue;
 }
 
 #main-content {
+  clear: both;
+
   p {
     margin: 20px auto;
-    max-width: 780px;
+    max-width: 660px;
     text-align: left;
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 
