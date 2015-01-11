@@ -12,21 +12,35 @@ a:link, a:visited {
 }
 
 h1 {
-  margin: 10px auto;
   font-size: 60px;
   font-weight: 100;
   color: $main-blue;
+  text-align: center;
 }
 
 #main-content {
   clear: both;
 
-  p {
-    margin: 20px auto;
-    max-width: 660px;
-    text-align: left;
+  .post-container {
+    max-width: 700px;
+    margin: 0 auto;
     font-size: 16px;
+    margin: 20px auto;
+    text-align: left;
     line-height: 27px;
+
+    h1 {
+      font-size: 45px;
+      line-height: 60px;
+    }
+
+    .highlight {
+      text-align: left;
+
+      pre {
+        margin: 1em 0;
+      }
+    }
   }
 }
 
