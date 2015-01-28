@@ -16,3 +16,5 @@ end
 {% endhighlight %}
 
 This block of text is here to explain the code and display even more text to help analyze our design. I wonder how others will think it looks. What do you think?
+
+> A block quote is going to look something like this and we need to make sure it gets to two lines so we can get a complete view of the design
