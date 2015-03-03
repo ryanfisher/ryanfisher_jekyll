@@ -10,7 +10,7 @@ class BaseView
 
   delegateEvents: ->
     for key, value of @events
-      @$el.on key, => this['__proto__'][value].call(this)
+      @$el.on key, (event) => this['__proto__'][value].call(this, event)
 
   $: (el) -> @$el.find(el)
 
