@@ -4,3 +4,4 @@
 jQuery ->
   new WindowView
   new Profile if $('body.profile').length > 0
+  new Link
