@@ -8,8 +8,9 @@ body {
 }
 
 #bio-content {
-  max-width: 50%;
   margin: 20px;
+  display: inline-block;
+  vertical-align: top;
 
   h1 {
     font-size: 60px;
@@ -50,6 +51,11 @@ body {
       font-weight: 900;
     }
   }
+}
+
+ul.articles {
+  display: inline-block;
+  list-style: none;
 }
 
 @media all and (max-width: 826px) and (min-width: 601px) {
