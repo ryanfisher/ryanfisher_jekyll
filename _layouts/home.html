@@ -3,18 +3,6 @@
 {% include head.html %}
 <body class="{{ page.body_class }}">
 
-<div id="bio-content">
-  <h1>Ryan Fisher</h1>
-  <ul>
-    <li>Code: <a target="_blank" class="github" href="https://github.com/ryanfisher">github</a></li>
-    <li>Tweets: <a target="_blank" class="twitter" href="https://twitter.com/ryan_fisher">@ryan_fisher</a></li>
-    <li>Photogaphy:
-      <a target="_blank" class="photos" href="http://photos.ryanfisher.io/photos">photos</a>,
-      <a target="_blank" class="px500" href="http://500px.com/ryanf">500px</a>,
-      <a target="_blank" class="flickr" href="https://www.flickr.com/photos/curiositypiqued/">flickr</a>
-    </li>
-  </ul>
-</div>
 <ul class="articles">
   {% for post in site.posts %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>

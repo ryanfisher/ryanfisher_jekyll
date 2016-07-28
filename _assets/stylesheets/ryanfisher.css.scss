@@ -1,76 +1,55 @@
 $main-blue: #03406a;
+$link-color: #326891;
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .nav-header {
+    margin: 20px;
+  }
+}
 
 body {
-  font-family: "Open Sans";
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: left;
+  color: #333;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-#bio-content {
-  margin: 20px;
-  display: inline-block;
-  vertical-align: top;
+a:link, a:visited {
+  color: $link-color;
+}
+
+a:hover, a:active {
+  color: $main-blue;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 30px;
+  border-left: 3px solid #333;
+}
+
+.post-container {
+  padding: 0 40px;
+  text-align: left;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 26px;
+  line-height: 1.625rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: georgia,"times new roman",times,serif;
+
+  p {
+    max-width: 570px;
+  }
 
   h1 {
-    font-size: 60px;
-    font-weight: 100;
-    color: $main-blue;
-    margin: 0;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-
-    .github:before { background: url('/images/GitHub-Mark-32px.png'); }
-    .twitter:before { background: url('/images/Twitter_logo_blue.png'); }
-    .px500:before { background: url('/images/500px.jpg'); }
-    .flickr:before { background: url('/images/white-small-chiclet.png'); }
-    .github, .twitter, .px500, .flickr {
-      &:before {
-        width: 16px;
-        height: 16px;
-        padding-right: 5px;
-        display: inline-block;
-        background-size: contain;
-        background-repeat: no-repeat;
-        content: '';
-      }
-    }
-
-    a:link, a:visited {
-      text-decoration: none;
-      color: $main-blue;
-      font-weight: 100;
-      outline: none;
-    }
-    a:hover, a:active {
-      font-weight: 900;
-    }
-  }
-}
-
-ul.articles {
-  display: inline-block;
-  list-style: none;
-}
-
-@media all and (max-width: 826px) and (min-width: 601px) {
-  .project .header {
-    img { max-width: 45%; }
-    .info { max-width: 45%; }
-  }
-}
-
-@media all and (max-width: 600px) {
-  .project .header {
-    img { width: 100%; }
-    .info {
-      display: block;
-      width: inherit;
-    }
+    font-size: 69px;
+    font-size: 4.3125rem;
+    line-height: 70px;
+    line-height: 4.375rem;
   }
 }
