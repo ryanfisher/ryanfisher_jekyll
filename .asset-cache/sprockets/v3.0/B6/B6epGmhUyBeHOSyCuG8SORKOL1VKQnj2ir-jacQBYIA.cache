@@ -1,0 +1,36 @@
+I"9(function() {
+  var Profile,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Profile = (function(superClass) {
+    extend(Profile, superClass);
+
+    function Profile() {
+      return Profile.__super__.constructor.apply(this, arguments);
+    }
+
+    Profile.prototype.el = 'body.profile';
+
+    Profile.prototype.initialize = function() {
+      this.github_events = new GithubEvents;
+      this.github_events.fetch();
+      return this.github_events.on('sync', (function(_this) {
+        return function() {
+          return _this.showEvents();
+        };
+      })(this));
+    };
+
+    Profile.prototype.showEvents = function() {
+      return this.$('.github-last-commit').text(this.github_events.lastCommitMessage());
+    };
+
+    return Profile;
+
+  })(BaseView);
+
+  window.Profile = Profile;
+
+}).call(this);
+:ET

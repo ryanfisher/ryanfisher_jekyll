@@ -1,0 +1,41 @@
+I"Z(function() {
+  var BaseView;
+
+  BaseView = (function() {
+    BaseView.prototype.events = {};
+
+    function BaseView() {
+      this.$el = this.el ? $(this.el) : $('<div>');
+      this.delegateEvents();
+      this.initialize();
+    }
+
+    BaseView.prototype.initialize = function() {};
+
+    BaseView.prototype.delegateEvents = function() {
+      var key, ref, results, value;
+      ref = this.events;
+      results = [];
+      for (key in ref) {
+        value = ref[key];
+        results.push(this.$el.on(key, (function(_this) {
+          return function(event) {
+            return _this['__proto__'][value].call(_this, event);
+          };
+        })(this)));
+      }
+      return results;
+    };
+
+    BaseView.prototype.$ = function(el) {
+      return this.$el.find(el);
+    };
+
+    return BaseView;
+
+  })();
+
+  window.BaseView = BaseView;
+
+}).call(this);
+:ET

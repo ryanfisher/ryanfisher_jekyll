@@ -1,0 +1,32 @@
+I"D(function() {
+  var Link,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Link = (function(superClass) {
+    extend(Link, superClass);
+
+    function Link() {
+      return Link.__super__.constructor.apply(this, arguments);
+    }
+
+    Link.prototype.el = 'a';
+
+    Link.prototype.events = {
+      'click': 'track'
+    };
+
+    Link.prototype.track = function(event) {
+      var $el;
+      $el = $(event.currentTarget);
+      return ga('send', 'event', 'Link', 'Visit', $el.text());
+    };
+
+    return Link;
+
+  })(BaseView);
+
+  window.Link = Link;
+
+}).call(this);
+:ET

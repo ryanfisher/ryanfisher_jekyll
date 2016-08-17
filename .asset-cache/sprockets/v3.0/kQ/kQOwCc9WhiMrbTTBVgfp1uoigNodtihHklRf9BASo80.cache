@@ -1,0 +1,58 @@
+I"M(function() {
+  var GithubEvents;
+
+  GithubEvents = (function() {
+    GithubEvents.prototype.url = 'https://api.github.com/users/ryanfisher/events';
+
+    function GithubEvents() {
+      this.trigger_obj = $('<div>');
+    }
+
+    GithubEvents.prototype.fetch = function() {
+      var jqXHR;
+      jqXHR = $.ajax({
+        url: this.url
+      });
+      return jqXHR.done((function(_this) {
+        return function(data) {
+          return _this.setAttributes(data);
+        };
+      })(this));
+    };
+
+    GithubEvents.prototype.setAttributes = function(data) {
+      this.attributes = data;
+      return this.trigger_obj.trigger('sync');
+    };
+
+    GithubEvents.prototype.get = function(key) {
+      return this.attributes[key];
+    };
+
+    GithubEvents.prototype.on = function(ev, callback) {
+      return this.trigger_obj.on('sync', function() {
+        return callback();
+      });
+    };
+
+    GithubEvents.prototype.lastCommitMessage = function() {
+      var commits, ev, i, len, ref;
+      ref = this.attributes;
+      for (i = 0, len = ref.length; i < len; i++) {
+        ev = ref[i];
+        if (ev.type === 'PushEvent') {
+          commits = ev.payload.commits;
+          return commits[commits.length - 1].message;
+        }
+      }
+      return null;
+    };
+
+    return GithubEvents;
+
+  })();
+
+  window.GithubEvents = GithubEvents;
+
+}).call(this);
+:ET

@@ -1,0 +1,38 @@
+I"ø(function() {
+  var WindowView,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  WindowView = (function(superClass) {
+    extend(WindowView, superClass);
+
+    function WindowView() {
+      return WindowView.__super__.constructor.apply(this, arguments);
+    }
+
+    WindowView.prototype.el = window;
+
+    WindowView.prototype.events = {
+      'scroll': 'change_nav'
+    };
+
+    WindowView.prototype.initialize = function() {
+      return this.nav = new Nav;
+    };
+
+    WindowView.prototype.change_nav = function() {
+      if (this.$el.scrollTop() === 0) {
+        return this.nav.show();
+      } else {
+        return this.nav.hide();
+      }
+    };
+
+    return WindowView;
+
+  })(BaseView);
+
+  window.WindowView = WindowView;
+
+}).call(this);
+:ET

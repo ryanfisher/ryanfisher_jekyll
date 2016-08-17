@@ -1,0 +1,11 @@
+I"¤(function() {
+  jQuery(function() {
+    new WindowView;
+    if ($('body.profile').length > 0) {
+      new Profile;
+    }
+    return new Link;
+  });
+
+}).call(this);
+:ET
