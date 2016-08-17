@@ -25,10 +25,16 @@ a:hover, a:active {
   color: $main-blue;
 }
 
+.highlight {
+  max-width: 800px;
+}
+
 blockquote {
-  margin: 0;
+  margin: 0 0 0 70px;
   padding-left: 30px;
   border-left: 3px solid #333;
+
+  p { margin-left: 20px !important; }
 }
 
 .post-container {
@@ -44,12 +50,11 @@ blockquote {
 
   p {
     max-width: 570px;
+    margin-left: 70px;
   }
 
   h1 {
-    font-size: 69px;
-    font-size: 4.3125rem;
-    line-height: 70px;
-    line-height: 4.375rem;
+    font-size: 63px;
+    line-height: 75px;
   }
 }
