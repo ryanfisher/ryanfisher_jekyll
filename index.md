@@ -9,7 +9,7 @@ Ryan Fisher
 ### Profiles
 * github: [@ryanfisher](https://github.com/ryanfisher)
 * twitter: [@ryan_fisher](https://twitter.com/ryan_fisher)
-* photography: [@ryanfisher](https://photos.ryanfisher.io/profile/ryanfisher)
+* instagram: [@ryanfisher.io](https://instagram.com/ryanfisher.io)
 
 ### Projects
 * PantryIO - A food tracking and recipe app built with Phoenix/Elixir<br>
