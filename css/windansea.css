@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200);
+
+#windansea-image-container {
+  position: relative;
+  width: 1224px;
+  height: 768px;
+  margin: 0 auto;
+}
+
+#image-list {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  margin: 0 0 0 100px;
+  padding: 0;
+  list-style: none;
+}
+
+.windansea-images {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 200px;
+  width: 1024px;
+  height: 768px;
+  background-image: url('/images/windansea/2012-12-02.jpg');
+}
+
+li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.showing {
+  background-color: #eee;
+  cursor: default;
+}
